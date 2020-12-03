@@ -1,0 +1,25 @@
+CREATE TABLE "product" (
+	"name" TEXT,
+	"price" INTEGER,
+	"quantity" INTEGER,
+	"category" TEXT
+);
+
+CREATE TABLE "client" (
+	"firstName" TEXT,
+	"lastName" TEXT,
+	"phone_number" TEXT,
+	"email" TEXT
+);
+
+CREATE TABLE "order" (
+	"client" INTEGER REFERENCES "client",
+	"products" product[]
+);
+
+CREATE TABLE "shop" (
+	"name" TEXT,
+	"clients" client[],
+	"products" product[],
+	"orders" "order"[]
+);
