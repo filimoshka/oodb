@@ -1,0 +1,9 @@
+CREATE TYPE "product" AS ("name" text, "price" integer, "quantity" integer, "category" text);
+CREATE TYPE "client" AS ("firstName" text, "lastName" text, "phoneNumber" text, "email" text);
+CREATE TYPE "order" AS ("client" client, "products" product[]);
+CREATE TABLE "shop" (
+	"name" TEXT,
+	"clients" client[],
+	"products" product[],
+	"orders" "order"[]
+);
