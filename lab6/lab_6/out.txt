@@ -1,0 +1,135 @@
+STEP 1: scan package lab_6.model:
+	lab_6.model.Client
+	lab_6.model.Order
+	lab_6.model.Product
+	lab_6.model.Shop
+STEP 2: scan class fields:
+	Fields of class lab_6.model.Client
+		firstName
+		lastName
+		phoneNumber
+		email
+	Fields of class lab_6.model.Order
+		client
+		products
+	Fields of class lab_6.model.Product
+		name
+		price
+		quantity
+		category
+	Fields of class lab_6.model.Shop
+		name
+		clients
+		products
+		orders
+STEP 3: scan class methods:
+	Fields of class lab_6.model.Client
+		toString
+		getFirstName
+		setFirstName
+		getLastName
+		setLastName
+		getPhoneNumber
+		setPhoneNumber
+		getEmail
+		setEmail
+		wait
+		wait
+		wait
+		equals
+		hashCode
+		getClass
+		notify
+		notifyAll
+	Fields of class lab_6.model.BankAccount
+		wait
+		wait
+		wait
+		equals
+		toString
+		hashCode
+		getClass
+		notify
+		notifyAll
+	Fields of class lab_6.model.Client
+		createBankAccount
+		toString
+		getFirstName
+		setFirstName
+		getLastName
+		setLastName
+		getPhoneNumber
+		setPhoneNumber
+		getEmail
+		setEmail
+		wait
+		wait
+		wait
+		equals
+		hashCode
+		getClass
+		notify
+		notifyAll
+	Fields of class lab_6.model.Bank
+		getName
+		setName
+		wait
+		wait
+		wait
+		equals
+		toString
+		hashCode
+		getClass
+		notify
+		notifyAll
+	Fields of class lab_6.model.Worker
+		getCode
+		getPosition
+		setPosition
+		setCode
+		toString
+		getFirstName
+		setFirstName
+		getLastName
+		setLastName
+		getPhoneNumber
+		setPhoneNumber
+		getEmail
+		setEmail
+		wait
+		wait
+		wait
+		equals
+		hashCode
+		getClass
+		notify
+		notifyAll
+	Fields of class lab_6.model.Transaction
+		getBancAccount
+		setBancAccount
+		getWorker
+		setWorker
+		getTransactionDate
+		setTransactionDate
+		getClient
+		setClient
+		getAmount
+		setAmount
+		wait
+		wait
+		wait
+		equals
+		toString
+		hashCode
+		getClass
+		notify
+		notifyAll
+STEP 4: scan class annotations:
+	Person is entity!
+STEP 5: scan fields annotations:
+	Field java.lang.String firstName is attribute!
+	Field java.lang.String lastName is attribute!
+	Field java.lang.String phoneNumber is attribute!
+	Field java.lang.String email is attribute!
+STEP 6: get superclass:
+	Super class of Client is lab_6.model.Person
