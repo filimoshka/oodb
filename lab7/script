@@ -1,0 +1,42 @@
+create table "client" (
+	"id" SERIAL primary key,
+	"firstName" text,
+	"lastName" text,
+	"phoneNumber" text,
+	"email" text
+);
+create table "product" (
+	"id" SERIAL primary key,
+	"name" text,
+	"price" integer,
+	"quantity" integer,
+	"category" text
+);
+create table "order" (
+	"id" serial primary key,
+	"client_id" integer references "client"(id)
+);
+create table "shop" (
+	"id" serial primary key,
+	"name" text
+);
+create table "shop_client" (
+	"id" serial primary key,
+	"shop_id" integer references "shop"(id),
+	"client_id" integer references "client"(id)
+);
+create table "order_product" (
+	"id" serial primary key,
+	"order_id" integer references "order"(id),
+	"product_id" integer references "product"(id)
+);
+create table "shop_order" (
+	"id" serial primary key,
+	"shop_id" integer references "shop"(id),
+	"order_id" integer references "order"(id)
+);
+create table "shop_product" (
+	"id" serial primary key,
+	"shop_id" integer references "shop"(id),
+	"product_id" integer references "product"(id)
+);
